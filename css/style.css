@@ -3140,6 +3140,7 @@ body {
 
 .rent {
   position: relative;
+  overflow: hidden;
 }
 .rent:before {
   content: "";
