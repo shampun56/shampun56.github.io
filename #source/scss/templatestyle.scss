@@ -1,0 +1,30 @@
+%title {
+	color: #14183E;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 128%;
+	font-family: Volkhov;
+}
+
+%text {
+	color: #5E6282;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 162%;
+	font-family: Poppins;
+}
+
+%ibg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+// чтобы подключить
+// .link{
+//  @extend %title;
+//}	

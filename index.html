@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TRINITY</title>
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<header class="header">
+			<div class='header__container container'>
+				<div class="header__wrapper">
+					<div class="header__body">
+
+						<nav class="header__menu menu-header ">
+							<div class="header__burger ">
+							</div>
+							<ul class="menu-header__list">
+								<li><a href="#" class="menu-header__link op active">Car List</a></li>
+								<li><a href="#" class="menu-header__link">Yacht List</a></li>
+								<li><a href="#" id="chouffer" class="menu-header__link">Chauffeur</a></li>
+							</ul>
+						</nav>
+						<a href="#" class="header__logo ">
+							<img class="logo" src="img/logo.svg" alt="Логотип сайта TRINITY">
+							<img class="logo-title" src="img/logo-title.svg" alt="логотип сайта TRINITY, TRINITY">
+							<img class="logo-text" src="img/logo-text.svg" alt="Логотип сайта TRINITY, текст">
+						</a>
+						<div class="header__other other-header">
+							<div class="other-header__body">
+								<a href="#" class="other-header__phone white-text">+971 58 590 7875</a>
+								<div id="dropMenuDubai" class="other-header__drop-menu drop-menu">
+									<button class="drop-menu__button">DUBAI</button>
+									<ul class="drop-menu__list">
+										<li class="drop-menu__item" data-value="dubai">Dubai</li>
+										<li class="drop-menu__item" data-value="moscow">Moscow</li>
+										<li class="drop-menu__item" data-value="budapest">Budapest</li>
+										<li class="drop-menu__item" data-value="wiesbaden">Wiesbaden</li>
+									</ul>
+
+								</div>
+								<div name="dropMenu" class="other-header__drop-menu drop-menu">
+									<button class="drop-menu__button">ENG</button>
+									<ul class="drop-menu__list">
+										<li class="drop-menu__item" data-value="ENG">ENG</li>
+										<li class="drop-menu__item" data-value="RU">RU</li>
+										<li class="drop-menu__item" data-value="UK">UK</li>
+
+									</ul>
+
+								</div>
+								<!--
+							<select name="dropSelect" class="other-header__drop-menu drop-menu">
+								<option value="1" class="other-header__option white-text">ENG</option>
+								<option value="2" class="other-header__option white-text">RU</option>
+								<option value="3" class="other-header__option white-text">UA</option>
+							</select>-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="full-screen">
+
+			<div class="full-screen__text">
+				Dubai
+				<span>luxury car rental</span>
+			</div>
+			<div class="full-screen__icons">
+				<a href="#" class="full-screen__ico">
+					<img src="img/telegram.svg" alt="Иконка приложения telegram, нажми, и перейди по ссылке">
+				</a>
+				<a href="#" class="full-screen__ico">
+					<img src="img/whatsapp.svg" alt="Иконка приложения whatsapp, нажми, и перейди по ссылке">
+				</a>
+			</div>
+			<div class="full-screen__image ibg">
+				<img src="img/full-screen__image.jpg" alt="Картинка на весь экран">
+			</div>
+		</section>
+
+		<main class="page">
+
+
+			<section class="page__burger-menu burger-menu">
+				<div class="burger-menu__body">
+					<div class="burger-menu__image ibg">
+						<img src="img/burger-menu/01.jpg" alt="Картинка для меню-бургера">
+					</div>
+					<ul class="burger-menu__list">
+						<li><a href="#" class="burger-menu__link">Car List</a></li>
+						<li><a href="#" class="burger-menu__link">Yacht list</a></li>
+						<li><a href="#" class="burger-menu__link">Chauffeur</a></li>
+						<li><a href="#" class="burger-menu__link">Conditions</a></li>
+						<li><a href="#" class="burger-menu__link">Testimonials</a></li>
+						<li><a href="#" class="burger-menu__link">Articles</a></li>
+						<li><a href="#" class="burger-menu__link">About Us</a></li>
+						<li><a href="#" class="burger-menu__link">Contacts</a></li>
+					</ul>
+					<div class="bd"></div>
+					<div class="burger-menu__footer footer-burger-menu">
+						<div class="footer-burger-menu__copy">
+							24 4th St - Al Quoz - Al Quoz <br> Industrial Area 3 - Dubai
+						</div>
+						<div class="footer-burger-menu__contact">
+							<div class="footer-burger-menu__phone white-text">+971 58 590 7875</div>
+							<div class="footer-burger-menu__icons">
+								<a href="#" class="footer-burger-menu__ico">
+									<img src="img/telegram.svg"
+										alt="Картинка приложения telegram, нажми чтобы перейти по ссылке">
+								</a>
+								<a href="#" class="footer-burger-menu__ico">
+									<img src="img/whatsapp.svg"
+										alt="Картинка приложения whatsapp, нажми чтобы перейти по ссылке">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="popular" class="page__main-slider main-slider tab tab-active">
+				<div class='main-slider__container container'>
+					<div class="main-slider__body">
+						<div class="main-slider__slider swiper-container">
+							<div class="main-slider__controls">
+								<div class="main-slider__arrows">
+									<div class="swiper-button-arrow-prev arrow-prev">
+
+									</div>
+									<div class="swiper-button-arrow-next arrow-next">
+
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+
+
+							<div class="main-slider__slider-wrapper swiper-wrapper">
+
+								<article class="main-slider__item item-main-slider swiper-slide">
+									<div class="item-main-slider__image ibg">
+										<img src="img/main-slider/01.png" alt="Картинка главного слайдера самых популярных машин">
+
+									</div>
+
+									<div class="item-main-slider__block">
+										<h2 class="item-main-slider__title title-slider">Audi <br> Huracan EVO Spyder RS6</h2>
+										<div class="item-main-slider__price">
+											<span>Rent is from aed</span>
+											2 400$
+											<span>per day</span>
+										</div>
+									</div>
+								</article>
+
+								<article class="main-slider__item item-main-slider swiper-slide">
+									<div class="item-main-slider__image ibg">
+										<img src="img/main-slider/02.png" alt="Картинка главного слайдера самых популярных машин">
+
+									</div>
+
+									<div class="item-main-slider__block">
+										<h2 class="item-main-slider__title title-slider">Lamborghini <br> Urus </h2>
+										<div class="item-main-slider__price">
+											<span>Rent is from aed</span>
+											2 400$
+											<span>per day</span>
+										</div>
+									</div>
+								</article>
+								<article class="main-slider__item item-main-slider swiper-slide">
+									<div class="item-main-slider__image ibg">
+										<img src="img/main-slider/01.png" alt="Картинка главного слайдера самых популярных машин">
+
+									</div>
+
+									<div class="item-main-slider__block">
+										<h2 class="item-main-slider__title title-slider">Rent Lamborghini <br> Huracan STO</h2>
+										<div class="item-main-slider__price">
+											<span>Rent is from aed</span>
+											2 400$
+											<span>per day</span>
+										</div>
+									</div>
+								</article>
+								<article class="main-slider__item item-main-slider swiper-slide">
+									<div class="item-main-slider__image ibg">
+										<img src="img/main-slider/04.png" alt="Картинка главного слайдера самых популярных машин">
+
+									</div>
+
+									<div class="item-main-slider__block">
+										<h2 class="item-main-slider__title title-slider">Ferrari <br>Roma</h2>
+										<div class="item-main-slider__price">
+											<span>Rent is from aed</span>
+											2 400$
+											<span>per day</span>
+										</div>
+									</div>
+								</article>
+								<article class="main-slider__item item-main-slider swiper-slide">
+									<div class="item-main-slider__image ibg">
+										<img src="img/main-slider/05.png" alt="Картинка главного слайдера самых популярных машин">
+
+									</div>
+
+									<div class="item-main-slider__block">
+										<h2 class="item-main-slider__title title-slider">Range Rover <br>Autobiography new 2020
+										</h2>
+										<div class="item-main-slider__price">
+											<span>Rent is from aed</span>
+											2 400$
+											<span>per day</span>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+						<div class="main-slider__content">
+							<h2 class="main-slider__title title">Most Popular</h2>
+							<div class="main-slider__find-block">
+								<input tabindex="1" placeholder="Car search" type="text" class="main-slider__input-find">
+								<button class="main-slider__button-find">
+									<img src="img/main-slider/search.svg" alt="Иконка поиска">
+								</button>
+							</div>
+							<div class="main-slider__mini-slider swiper-container">
+
+								<div class="main-slider__mini-slider-wrapper swiper-wrapper">
+									<article class="main-slider__mini-item swiper-slide">
+										<div class="main-slider__mini-text">
+											Audi
+											<span>Huracan EVO Spyder RS6</span>
+										</div>
+									</article>
+									<article class="main-slider__mini-item swiper-slide">
+										<div class="main-slider__mini-text">
+											Lamborghini
+											<span>Urus</span>
+										</div>
+									</article>
+									<article class="main-slider__mini-item swiper-slide">
+										<div class="main-slider__mini-text">
+											Lamborghini
+											<span>Huracan EVO Spyder </span>
+										</div>
+									</article>
+									<article class="main-slider__mini-item swiper-slide">
+										<div class="main-slider__mini-text">
+											Ferrari
+											<span>Roma</span>
+										</div>
+									</article>
+									<article class="main-slider__mini-item swiper-slide">
+										<div class="main-slider__mini-text">
+											Range Rover
+											<span>Autobiography New 2022</span>
+										</div>
+									</article>
+								</div>
+							</div>
+							<button tabindex="2" class="main-slider__button btn-blue">
+								View all
+							</button>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<ul class="tabs">
+				<li class="tab-item "><a href="#special-offer">Special Offer</a></li>
+				<li class="tab-item"> <a href="#">New Car</a></li>
+				<li class="tab-item active"><a href="#popular">Most Popular</a></li>
+				<li class="tab-item"> <a href="#">Daily</a></li>
+			</ul>
+
+			<section id="special-offer" class="page__special-offer special-offer tab">
+
+				<div class="special-offer__body">
+
+					<div class="special-offer__items">
+						<article class="special-offer__column">
+							<div class="special-offer__item item-special-offer">
+								<div class="item-special-offer__image ibg">
+									<img src="img/main-slider/02.png" alt="Картинка">
+								</div>
+								<div class="item-special-offer__block">
+									<h2 class="item-special-offer__title title-slider">Lamborghini Urus</h2>
+									<a href="#" class="item-special-offer__button">Rent</a>
+								</div>
+							</div>
+						</article>
+						<article class="special-offer__column">
+							<div class="special-offer__item item-special-offer">
+								<div class="item-special-offer__image ibg">
+									<img src="img/main-slider/03.png" alt="Картинка">
+								</div>
+								<div class="item-special-offer__block">
+									<h2 class="item-special-offer__title title-slider">Ferrari Roma</h2>
+									<a href="#" class="item-special-offer__button">Rent</a>
+								</div>
+							</div>
+						</article>
+						<article class="special-offer__column">
+							<div class="special-offer__item item-special-offer">
+								<div class="item-special-offer__image ibg">
+									<img src="img/main-slider/04.png" alt="Картинка">
+								</div>
+								<div class="item-special-offer__block">
+									<h2 class="item-special-offer__title title-slider">Rolls-Royce Ghost</h2>
+									<a href="#" class="item-special-offer__button">Rent</a>
+								</div>
+							</div>
+						</article>
+						<article class="special-offer__column">
+							<div class="special-offer__item item-special-offer">
+								<div class="item-special-offer__image ibg">
+									<img src="img/main-slider/05.png" alt="Картинка">
+								</div>
+								<div class="item-special-">
+									<h2 class="item-special-offer__title title-slider">Porsche 911 Turbo S</h2>
+									<a href="#" class="item-special-offer__button">Rent</a>
+								</div>
+							</div>
+						</article>
+					</div>
+					<a href="#" class="special-offer__button btn-default">View All</a>
+				</div>
+
+			</section>
+
+			<section class="page__about-us about-us">
+				<div class='about-us__container container'>
+					<h2 class="about-us__title">
+						About Us
+					</h2>
+					<div class="about-us__columns">
+						<article class="about-us__column">
+							<div class="about-us__item item-about-us">
+								<div class="item-about-us__title">
+									<div class="item-about-us__image">
+										<img src="img/about-us/01.svg" alt="Цифра восемь, декоративная">
+									</div>
+									<h3>year</h3>
+								</div>
+								<div class="item-about-us__text">
+									We've come a long way from a 2-people company to winning at Webby's.
+								</div>
+							</div>
+						</article>
+						<article class="about-us__column">
+							<div class="about-us__item item-about-us">
+								<div class="item-about-us__title">
+									<div class="item-about-us__image">
+										<img src="img/about-us/02.svg" alt="Цифра семьдесят два, декоративная">
+									</div>
+									<h3>cars</h3>
+								</div>
+								<div class="item-about-us__text">
+									We've come a long way from a 2-people company to winning at Webby's.
+								</div>
+							</div>
+						</article>
+						<article class="about-us__column">
+							<div class="about-us__item item-about-us">
+								<div class="item-about-us__title">
+									<div class="item-about-us__image">
+										<img src="img/about-us/03.svg" alt="Цифра сто девяноста, декоративная">
+									</div>
+									<h3>people</h3>
+								</div>
+								<div class="item-about-us__text">
+									We've come a long way from a 2-people company to winning at Webby's.
+								</div>
+							</div>
+						</article>
+
+					</div>
+					<div class="about-us__text">
+						I’m <span>with cars for over 18 years. My auto passion and attention to details will make your
+							experience
+							with us second to none.</span> Guaranteed.
+					</div>
+					<div class="about-us__visit visit-about-us">
+						<h4 class="visit-about-us__title">
+							Kirill Aliev, MBA
+						</h4>
+						<h5 class="visit-about-us__sub-title">
+							CEO Trinity car rental boutique
+						</h5>
+					</div>
+				</div>
+			</section>
+
+			<div class="page__image">
+				<img src="img/chouffer.png" alt="Шофёр">
+			</div>
+
+			<section class="page__reviews reviews">
+				<div class="reviews__body">
+					<h2 class="reviews__title main-title">Reviews</h2>
+					<div class="reviews__columns">
+						<article class="reviews__column">
+
+							<div class="reviews__image ">
+								<img src="img/reviews/01.png" alt="Картинка отзыва">
+								<a href="#" class="reviews__video">
+
+								</a>
+							</div>
+
+						</article>
+						<article class="reviews__column">
+
+							<div class="reviews__image ">
+								<img src="img/reviews/02.png" alt="Картинка отзыва">
+								<a href="#" class="reviews__video">
+
+								</a>
+							</div>
+
+						</article>
+						<article class="reviews__column">
+
+							<div class="reviews__image ">
+								<img src="img/reviews/03.png" alt="Картинка отзыва">
+								<a href="#" class="reviews__video">
+
+								</a>
+							</div>
+
+						</article>
+						<article class="reviews__column">
+
+							<div class="reviews__image ">
+								<img src="img/reviews/04.png" alt="Картинка отзыва">
+								<a href="#" class="reviews__video">
+
+								</a>
+							</div>
+
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__advantages advantages">
+				<div class="advantages__body">
+					<h2 class="advantages__title main-title">Advantages</h2>
+					<div class="advantages__columns">
+						<article class="advantages__column">
+							<div class="advantages__item item-advantages">
+								<div class="item-advantages__image">
+									<img src="img/advantages/01.png" alt="Картинка">
+								</div>
+								<div class="item-advantages__content-block">40+ unique cars for rent from our fleet</div>
+							</div>
+						</article>
+						<article class="advantages__column">
+							<div class="advantages__item item-advantages">
+								<div class="item-advantages__image">
+									<img src="img/advantages/02.png" alt="Картинка">
+								</div>
+								<div class="item-advantages__content-block">Delivery and return of cars in Dubai 24/7</div>
+							</div>
+						</article>
+						<article class="advantages__column">
+							<div class="advantages__item item-advantages">
+								<div class="item-advantages__image">
+									<img src="img/advantages/03.png" alt="Картинка">
+								</div>
+								<div class="item-advantages__content-block">Insurance without a deductible for each car</div>
+							</div>
+						</article>
+						<article class="advantages__column">
+							<div class="advantages__item item-advantages">
+								<div class="item-advantages__image">
+									<img src="img/advantages/04.png" alt="Картинка">
+								</div>
+								<div class="item-advantages__content-block">No video or audio recording in the car</div>
+							</div>
+						</article>
+						<article class="advantages__column">
+							<div class="advantages__item item-advantages">
+								<div class="item-advantages__image">
+									<img src="img/advantages/05.png" alt="Картинка">
+								</div>
+								<div class="item-advantages__content-block">24/7 technical support</div>
+							</div>
+						</article>
+						<article class="advantages__column">
+							<div class="advantages__item item-advantages">
+								<div class="item-advantages__image">
+									<img src="img/advantages/06.png" alt="Картинка">
+								</div>
+								<div class="item-advantages__content-block">All models have a premium package</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__contacts contacts">
+				<div class='contacts__container container'>
+					<div class="contacts__body">
+						<div class="contacts__map">
+							<iframe
+								src="https://yandex.ru/map-widget/v1/?um=constructor%3A5fee838625513a7334636de31809cc9082c1dcc32af393599d254a5ebec35cd2&amp;source=constructor"
+								frameborder="0"></iframe>
+						</div>
+						<form action="#" class="contacts__form form-contacts">
+							<div class="form-contacts__body">
+								<h2 class="form-contacts__title title">Ask us anything</h2>
+								<div class="form-contacts__inputs">
+									<input placeholder="Name" name="inputContact" type="text" class="form-contacts__input">
+									<input placeholder="E-mail" name="inputContact" type="text" class="form-contacts__input">
+									<input placeholder="+7 (999) 999 - 99 - 99" name="inputContact" type="text"
+										class="form-contacts__input">
+									<textarea placeholder="Message" name="inputContact" class="form-contacts__text"></textarea>
+								</div>
+								<button type="submit" class="form-contacts__button">Send the request</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__rent rent">
+				<div class='rent__container container'>
+					<div class="rent__body">
+						<div class="rent__content">
+							<h2 class="rent__title">Get a discount of up to <span>60%</span></h2>
+							<h3 class="rent__sub-title">
+								Get the latest articles and business updates that you need to know, you’ll even get special
+								recommendations weekly.
+							</h3>
+							<div class="rent__email email-rent">
+								<input placeholder="Your email" name="inputContact" type="text" class="email-rent__input">
+								<button class="email-rent__button btn-blue">
+									Receive
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+			</section>
+			<ul class="tabs scroll-tabs">
+				<li class="tab-item"><a href="#">Lexus </a></li>
+				<li class="tab-item"><a href="#">Mercedes</a></li>
+				<li class="tab-item"><a href="#">Audi</a></li>
+				<li class="tab-item"><a href="#">BMW</a></li>
+				<li class="tab-item"><a href="#">Rolls-Royce </a></li>
+				<li class="tab-item"><a href="#">Cadillac</a></li>
+				<li class="tab-item"><a href="#">Maserati</a></li>
+				<li class="tab-item"><a href="#">Lamborghini</a></li>
+				<li class="tab-item"><a href="#">Bentley</a></li>
+				<li class="tab-item"><a href="#">Porsche</a></li>
+			</ul>
+
+
+		</main>
+
+
+		<footer class="footer">
+			<div class="border"></div>
+			<div class='footer__container container'>
+				<div class="footer__body">
+					<div class="footer__connection connection">
+						<div class="connection__body">
+							<nav class="connection__menu menu-connection">
+								<div data-spollers="1152,max" class="menu-connection__body">
+									<div class="menu-connection__block">
+										<h2 tabindex="-1" data-spoller class="menu-connection__title">For Customers</h2>
+										<ul class="menu-connection__list ">
+											<li><a href="#" class="menu-connection__link">About Us</a></li>
+											<li><a href="#" class="menu-connection__link">Conditions</a></li>
+											<li><a href="#" class="menu-connection__link">Testimonials</a></li>
+											<li><a href="#" class="menu-connection__link">Articles</a></li>
+											<li><a href="#" class="menu-connection__link">Contacts</a></li>
+										</ul>
+									</div>
+									<div class="menu-connection__block">
+										<h2 tabindex="-1" data-spoller class="menu-connection__title">Car List</h2>
+										<ul class="menu-connection__list">
+											<li><a href="#" class="menu-connection__link">SUVs</a></li>
+											<li><a href="#" class="menu-connection__link">Convertibles</a></li>
+											<li><a href="#" class="menu-connection__link">Sports Cars</a></li>
+											<li><a href="#" class="menu-connection__link">Premium</a></li>
+											<li><a href="#" class="menu-connection__link">Coupe</a></li>
+										</ul>
+									</div>
+									<div class="menu-connection__block">
+										<h2 tabindex="-1" data-spoller class="menu-connection__title">Service</h2>
+										<ul class="menu-connection__list">
+											<li><a href="#" class="menu-connection__link">Car List</a></li>
+											<li><a href="#" class="menu-connection__link">Yacht list</a></li>
+											<li><a href="#" id="chouffer" class="menu-connection__link">Chauffeur</a></li>
+										</ul>
+									</div>
+								</div>
+
+
+
+							</nav>
+							<div class="border-vertical">
+
+							</div>
+							<div class="connection__contacts contacts-connection">
+
+								<div class="contacts-connection__block">
+									<div class="contacts-connection__phone ">+971 58 590 7875</div>
+									<div class="contacts-connection__icons">
+
+										<a href="#" class="contacts-connection__ico">
+											<img src="img/telegram.svg" alt="icon of telegram">
+										</a>
+										<a href="#" class="contacts-connection__ico">
+											<img src="img/whatsapp.svg" alt="icon of whatsapp">
+										</a>
+									</div>
+								</div>
+								<a href="#" class="contacts-connection__link">REQUEST A CALLBACK</a>
+								<h3 class="contacts-connection__sub-title">24 4th St - Al Quoz - Al Quoz Industrial Area 3 -
+									Dubai</h3>
+								<div class="contacts-connection__email">
+									<input placeholder="Write your E-mail" name="inputContact" type="text"
+										class="contacts-connection__input">
+									<button type="submit" class="contacts-connection__button btn-blue">submit</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="border"></div>
+					<div class="footer__payment payment">
+						<div class="payment__body">
+							<a href="#" class="payment__image">
+								<img src="img/footer/01.png" alt="Image of footer">
+							</a>
+							<a href="#" class="payment__image">
+								<img src="img/footer/02.png" alt="Image of footer">
+							</a>
+							<a href="#" class="payment__image">
+								<img src="img/footer/03.png" alt="Image of footer">
+							</a>
+							<a href="#" class="payment__image">
+								<img src="img/footer/04.png" alt="Image of footer">
+							</a>
+							<a href="#" class="payment__image">
+								<img src="img/footer/05.png" alt="Image of footer">
+							</a>
+							<a href="#" class="payment__image">
+								<img src="img/footer/06.png" alt="Image of footer">
+							</a>
+							<a href="#" class="payment__image">
+								<img src="img/footer/07.png" alt="Image of footer">
+							</a>
+							<a href="#" class="payment__image">
+								<img src="img/footer/08.png" alt="Image of footer">
+							</a>
+							<a href="#" class="payment__image">
+								<img src="img/footer/09.png" alt="Image of footer">
+							</a>
+							<a href="#" class="payment__image">
+								<img src="img/footer/10.png" alt="Image of footer">
+							</a>
+						</div>
+					</div>
+					<div class="border"></div>
+					<div class="footer__copy copy-footer">
+						<div class="copy-footer__policy">
+							Privacy Policy
+						</div>
+						<div class="copy-footer__rule">
+							©2023 TRINITY. All rights reserved
+						</div>
+						<div class="copy-footer__icons">
+							<a href="#" class="copy-footer__ico"><img src="img/footer/icons/01.svg" alt="Icon of footer"></a>
+							<a href="#" class="copy-footer__ico"><img src="img/footer/icons/02.svg" alt="Icon of footer"></a>
+							<a href="#" class="copy-footer__ico"><img src="img/footer/icons/03.svg" alt="Icon of footer"></a>
+							<a href="#" class="copy-footer__ico"><img src="img/footer/icons/04.svg" alt="Icon of footer"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+	</div>
+
+
+
+
+	<script src="js/anim.js"></script>
+	<script src="js/ibg.js"></script>
+	<script src="js/popup.js"></script>
+	<script src="js/spoller.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

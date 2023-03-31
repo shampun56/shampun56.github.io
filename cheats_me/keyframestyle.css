@@ -1,0 +1,48 @@
+.link {
+  -webkit-animation: white-circle 2s linear infinite alternate 0s forwards;
+          animation: white-circle 2s linear infinite alternate 0s forwards;
+}
+
+@-webkit-keyframes white-circle {}
+
+@keyframes white-circle {}
+@keyframes white-circle {}
+.link {
+  -webkit-animation-name: white-circle;
+          animation-name: white-circle;
+}
+
+.link {
+  -webkit-animation-duration: 1s, 500ms;
+          animation-duration: 1s, 500ms;
+}
+
+.link {
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.link {
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+}
+
+.link {
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+.link:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.link {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.link {
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}

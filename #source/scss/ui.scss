@@ -1,0 +1,624 @@
+@import "variablestyle.scss";
+//АДАПТИВНОЕ СВОЙСТВО
+
+
+//==================================================================================================================================================
+//==================================================================================================================================================
+//==================================================================================================================================================
+//=========================================================ОСНОВНОЙ ШРИФТ============================================================================
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+//Stolzl
+@font-face {
+	font-family: 'Stolzl';
+	src: url('../fonts/Stolzl-Regular.eot');
+	src: url('../fonts/Stolzl-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Stolzl-Regular.woff2') format('woff2'),
+		url('../fonts/Stolzl-Regular.woff') format('woff'),
+		url('../fonts/Stolzl-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Stolzl';
+	src: url('../fonts/Stolzl-Medium.eot');
+	src: url('../fonts/Stolzl-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Stolzl-Medium.woff2') format('woff2'),
+		url('../fonts/Stolzl-Medium.woff') format('woff'),
+		url('../fonts/Stolzl-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Stolzl';
+	src: url('../fonts/Stolzl-Bold.eot');
+	src: url('../fonts/Stolzl-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Stolzl-Bold.woff2') format('woff2'),
+		url('../fonts/Stolzl-Bold.woff') format('woff'),
+		url('../fonts/Stolzl-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'Stolzl';
+	src: url('../fonts/Stolzl-Book.eot');
+	src: url('../fonts/Stolzl-Book.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Stolzl-Book.woff2') format('woff2'),
+		url('../fonts/Stolzl-Book.woff') format('woff'),
+		url('../fonts/Stolzl-Book.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+
+
+
+
+//=====================================================ОСНОВНЫЕ БЛОКИ===========================================================================
+
+
+
+body.scroll-lock {
+	overflow: hidden;
+}
+
+body {
+
+	font-family: 'Stolzl';
+}
+
+//=====================================ВСПОМОГАЮЩИЕ=КЛАССЫ============================================================================================
+
+//полноэкранная картинка
+
+.ibg {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+
+	img {
+		display: none;
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	//	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+.container {
+	margin: 0px auto;
+	padding: 0px 15px;
+	max-width: 1890px;
+}
+
+
+//============FULLSCREEN=============================================================================================================================================================
+
+
+
+.full-screen {
+	position: relative;
+	z-index: 1;
+	flex: 1 0 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&:before {
+		content: '';
+		background: url('../img/decore-full-screen.svg')0 0 / cover no-repeat;
+		height: 40px;
+		width: 2px;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, 0%);
+		z-index: 1;
+
+		@media (max-width: 479px) {
+			display: none;
+		}
+	}
+
+	&:after {
+		content: '';
+		background: url('../img/decore-full-screen-two.svg')0 0 / cover no-repeat;
+		height: 20px;
+		width: 2px;
+		position: absolute;
+		bottom: 40px;
+		left: 50%;
+		transform: translate(-50%, 0%);
+		z-index: 1;
+
+		@media (max-width: 479px) {
+			display: none;
+		}
+	}
+}
+
+
+.full-screen {
+
+	// .full-screen__image
+
+	&__image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		font-family: 'Stolzl';
+		font-weight: 500;
+		@include adaptiv-value("font-size", 120, 40, 1);
+		@include adaptiv-value("line-height", 75%, 100%, 1);
+		text-align: center;
+		color: #fff;
+		text-align: center;
+
+		span {
+			margin: 0px 0px 0px 0px;
+			font-family: 'Stolzl';
+			font-weight: 400;
+			@include adaptiv-value("font-size", 32, 16, 1);
+			@include adaptiv-value("line-height", 281%, 201%, 1);
+			text-transform: uppercase;
+		}
+
+		position: relative;
+		z-index: 1;
+	}
+
+	&__icons {
+		position: absolute;
+		@include adaptiv-value("bottom", 60, 20, 1);
+		@include adaptiv-value("right", 60, 20, 1);
+		z-index: 1;
+		display: grid;
+		grid-auto-flow: column;
+		gap: 20px;
+	}
+
+	&__ico {
+		@include adaptiv-value("padding-left", 12, 6, 1);
+		@include adaptiv-value("padding-right", 12, 6, 1);
+		@include adaptiv-value("padding-top", 12, 6, 1);
+		@include adaptiv-value("padding-bottom", 12, 6, 1);
+		border-radius: 50%;
+
+		&:nth-child(1) {
+			background-color: #34AADF;
+		}
+
+		&:nth-child(2) {
+			background-color: #43D854;
+		}
+	}
+}
+
+
+//=========================================================КЛАССЫ=ДЛЯ=ТЕКСТОВ=================================================================================================
+.title {
+	font-family: 'Stolzl';
+	font-weight: 500;
+	@include adaptiv-value("font-size", 70, 40, 1);
+	line-height: 129%;
+	color: #fff;
+}
+
+.title-slider {
+	font-weight: 700;
+	line-height: 130%;
+	@include adaptiv-value("font-size", 46, 16, 1);
+	color: #fff;
+}
+
+.sub-title {
+	font-family: 'Stolzl';
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 150%;
+}
+
+.main-title {
+	font-weight: 500;
+	@include adaptiv-value("font-size", 100, 40, 1);
+	color: #FFFFFF;
+
+}
+
+.white-text {
+	font-family: 'Stolzl';
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 562%;
+	color: #fff;
+}
+
+.btn-blue {
+	font-weight: 700;
+	font-size: 15px;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px 37px;
+	background-color: #33B7BC;
+	border-radius: 10px;
+	transition: all 0.8s ease 0s;
+
+	&:focus {
+		background-color: #2EACB0;
+		transition: all 0.8s ease 0s;
+	}
+
+	@media(any-hover:hover) {
+		&:hover {
+			transition: all 0.8s ease 0s;
+			background: #2EACB0;
+			box-shadow: 0px 0px 20px #245C5F;
+		}
+	}
+
+	&.disabled {
+		pointer-events: none;
+
+	}
+}
+
+//LOGO
+.logo {
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	max-width: 100%;
+	margin: 0px 0px 6px 0px;
+
+	@media (max-width: 992px) {
+		width: 50px;
+		height: 50px;
+	}
+}
+
+.logo-text {
+	width: 140px;
+	height: 11px;
+	text-align: center;
+	margin: 0px 0px 6px 0px;
+
+	@media (max-width: 992px) {
+		display: none;
+	}
+}
+
+.logo-title {
+	width: 140px;
+	text-align: center;
+	height: 28px;
+
+	@media (max-width: 992px) {
+		display: none;
+	}
+}
+
+.header.scroll .logo-title {
+	visibility: hidden;
+	display: none;
+}
+
+.header.scroll .logo-text {
+	visibility: hidden;
+	display: none;
+}
+
+//Табы
+
+.tabs {
+	@include adaptiv-value("padding-top", 250, 100, 1);
+	background-color: #161516;
+	display: grid;
+	position: relative;
+	z-index: 2;
+	padding-bottom: 20px;
+
+	@media (max-width: $md3) {
+		overflow: auto;
+	}
+
+	@media (min-width: 767px) {
+		justify-content: center;
+	}
+
+	align-items: center;
+	grid-auto-flow: column;
+	gap: 50px;
+
+	a {
+		transition: all 0.8s ease 0s;
+	}
+
+	li {
+		@media(any-hover: hover) {
+			&:hover {
+				a {
+					opacity: 1;
+					color: #fff;
+					transition: all 0.8s ease 0s;
+				}
+			}
+		}
+
+		&.active {
+			border-bottom: 6px solid #33B7BC;
+
+			a {
+				transition: all 0.8s ease 0s;
+				color: #fff;
+			}
+		}
+	}
+}
+
+.tab-item {
+	a {
+		white-space: nowrap;
+		color: #414141;
+		font-weight: 500;
+		@include adaptiv-value("font-size", 40, 20, 1);
+	}
+}
+
+.tab {
+	display: none;
+
+
+	&:target {
+		display: block;
+	}
+}
+
+.tab-active {
+	@media (min-width: $md3) {
+		display: block;
+	}
+}
+
+.scroll-tabs {
+	overflow: auto;
+
+	@include adaptiv-value("padding-top", 200, 100, 1);
+	@include adaptiv-value("padding-bottom", 85, 40, 1);
+	background-color: #161516;
+}
+
+//Анимация при скролле
+//=================================BURGER-MENU==================================================================================================================================================\
+.page {
+
+	// .page__burger-menu
+
+	&__burger-menu {}
+}
+
+.burger-menu {
+	position: fixed;
+	top: -100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding: 220px 0px 0px 0px;
+	display: flex;
+	flex-direction: column;
+	transition: all 0.8s ease 0s;
+
+	&.active {
+		top: 0;
+		z-index: 49;
+		transition: all 0.8s ease 0s;
+	}
+
+	// .burger-menu__body
+
+	&__body {
+		overflow: auto;
+
+
+		padding: 0px 40px;
+	}
+
+	// .burger-menu__image
+
+	&__image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		filter: brightness(0.3);
+		//background: linear-gradient(60.07deg, rgba(22, 21, 22, 0.98) 43.23%, rgba(22, 21, 22, 0.75) 63.47%);
+	}
+
+	// .burger-menu__list
+
+	&__list {
+		flex: 1 1 auto;
+		display: grid;
+
+
+		@media (min-width: 600px) {
+			grid-template-columns: repeat(2, 1fr);
+			justify-content: start;
+		}
+
+	}
+
+	// .burger-menu__link
+
+	&__link {
+		font-weight: 500;
+		@include adaptiv-value("font-size", 54, 20, 1);
+		@include adaptiv-value("line-height", 120, 70, 1);
+		color: #76828C;
+		transition: all 0.3s ease 0s;
+
+		@media(any-hover: hover) {
+			&:hover {
+				border-bottom: 2px solid #34AADF;
+				color: #fff;
+				transition: all 0.3s ease 0s;
+			}
+		}
+	}
+
+	// .burger-menu__footer
+
+	&__footer {
+		display: grid;
+		grid-auto-flow: column;
+
+		@media (max-width: 767px) {
+			grid-auto-flow: row;
+		}
+	}
+}
+
+.footer-burger-menu {
+
+	// .footer-burger-menu__copy
+
+	&__copy {
+		font-weight: 400;
+		@include adaptiv-value("font-size", 24, 14, 1);
+		line-height: 142%;
+		color: #76828C;
+	}
+
+	// .footer-burger-menu__contact
+
+	&__contact {
+		display: grid;
+		grid-auto-flow: column;
+		gap: 22px;
+
+		@media (min-width: 767px) {
+			justify-content: end;
+		}
+
+		@media (max-width: 425px) {
+			grid-auto-flow: row;
+			gap: 12px;
+		}
+
+		align-items: center;
+	}
+
+	// .footer-burger-menu__phone
+
+	&__phone {}
+
+	// .footer-burger-menu__icons
+
+	&__icons {
+		display: grid;
+		grid-auto-flow: column;
+		gap: 22px;
+
+		@media (max-width: 425px) {
+			gap: 12px;
+		}
+
+		justify-content: start;
+	}
+
+	// .footer-burger-menu__ico
+
+	&__ico {
+		border-radius: 50%;
+		@include adaptiv-value("padding-left", 12, 6, 1);
+		@include adaptiv-value("padding-right", 12, 6, 1);
+		@include adaptiv-value("padding-top", 12, 6, 1);
+		@include adaptiv-value("padding-bottom", 12, 6, 1);
+
+		&:nth-child(1) {
+			background-color: #34AADF;
+		}
+
+		&:nth-child(2) {
+			background-color: #43D854;
+		}
+	}
+}
+
+.bd {
+	border-top: 1px solid #272727;
+	margin: 60px 0px;
+}
+
+.scroll-down {
+	color: #fff;
+	@include adaptiv-value("font-size", 40, 14, 1);
+	opacity: 0.4;
+	margin: 0px 0px 20px 0px;
+	position: relative;
+	display: inline-flex;
+
+	&:after {
+		content: '↓';
+		position: absolute;
+		top: 4px;
+		right: -28px;
+		width: 10px;
+		height: 10px;
+	}
+}
+
+
+.border-vertical {
+	@media (min-width: $md3) {
+		transform: rotate(180deg);
+		border-right: 1px solid #272727;
+		height: 100%;
+		margin: -20px 80px 0px 0px;
+	}
+
+	@media (max-width: $md3) {
+		margin: 40px 0px;
+		width: 100%;
+		border-bottom: 1px solid #272727;
+	}
+
+
+}
+
+
+.border {
+	border-bottom: 1px solid #272727;
+	width: 100%;
+	margin: 0px -15px;
+}
+
+
+//===============ОДИНАКОВЫЕ-БЛОКИ================================================================================================================================================

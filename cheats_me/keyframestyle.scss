@@ -1,0 +1,89 @@
+//универсальное свойство animation, также можно делать несколько анимаций допустим, white-circle, red-circle и свои свойства
+.link {
+	//name //duration //atf //atc //ada //delay //fill-mode
+	animation: white-circle 2s linear infinite alternate 0s forwards;
+}
+
+//пишем @keyframes, ставим пробел, название и фигурные скобки
+//затем можно написать как from, to т.е. от начала до конца, либо  в процентах 0%, 100%
+@keyframes white-circle {
+	from {}
+
+	to {}
+}
+
+@keyframes white-circle {
+	0% {}
+
+	100% {}
+}
+
+//animation-name
+//кому назначить анимацию
+
+
+.link {
+	animation-name: white-circle;
+}
+
+
+//animation-duration
+//время анимации, от начала до конца (в секундах)
+//также можно указывать несколько значений, через запятую
+
+.link {
+	animation-duration: 1s, 500ms;
+}
+
+
+//animation-timing-function
+//задает сценарий развития анимации
+
+.link {
+	animation-timing-function: ease;
+}
+
+
+//animation-iteration-count
+//Отвечает за кол-во повторов ключевых кадров, т.е. сколько раз проиграет анимация
+//еще есть свойство infinite, чтобы анимация была бесконечно раз
+
+.link {
+	animation-iteration-count: 3;
+}
+
+//animation-direction
+//определяет тип и направление ключевых кадров
+//alternate, проще говоря, анимация будет идти как пинпонг, туда обратно
+//reverse, анимация будет идти с конца к началу
+
+.link {
+	animation-direction: normal;
+}
+
+//animation-play-state
+//может управлять остановками анимации
+//по умолчанию running
+//есть еще none, чтобы при наведении он  вставал на своё место
+//можно указывать несколько значений
+//допустим, при наведении на него, он остановится:
+
+.link:hover {
+	animation-play-state: paused;
+}
+
+//animation-delay
+//задержка перед началом анимации
+//можно указывать несколько через запятую
+
+.link {
+	animation-delay: 1s;
+}
+
+//animation-fill-mode
+//forwards, т.е. как только достигает конца (100%), то остаётся на месте
+//можно указывать несколько значений, через запятую
+
+.link {
+	animation-fill-mode: forwards;
+}

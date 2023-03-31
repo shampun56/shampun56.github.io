@@ -1,0 +1,6 @@
+.link {
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+  -webkit-transition: padding 1s ease 0s, color 2s ease-in 2s;
+  transition: padding 1s ease 0s, color 2s ease-in 2s;
+}

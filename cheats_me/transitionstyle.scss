@@ -1,0 +1,31 @@
+.link {
+	//transition-duration: 1s;
+	//transition-property: all;
+	//transition-delay: 0s;
+	//transition-timing-function: ease;
+	transition: all 1s ease 0s;
+	transition: padding 1s ease 0s, color 2s ease-in 2s;
+}
+
+
+
+
+//transition-duration
+//время анимации, значения можно писать через запятую, в зависимости он свойств. (transition-property)
+
+
+
+//transition-property
+//какому css свойству применить анимацию
+
+
+//transition-delay
+//Задержка анимации
+
+
+//transition-timing-function
+//некий сценарий
+
+
+//универсальное свойство transition
+// transition
